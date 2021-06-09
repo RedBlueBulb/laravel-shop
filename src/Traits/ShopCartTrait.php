@@ -39,7 +39,7 @@ trait ShopCartTrait
 
         static::deleting(function($user) {
             if (!method_exists(Config::get('auth.providers.users.model'), 'bootSoftDeletingTrait')) {
-                $user->items()->sync([]);
+                $user->items()->delete([]);
             }
 
             return true;
