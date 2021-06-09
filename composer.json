@@ -13,11 +13,17 @@
             "email": "amostajo@gmail.com"
         }
     ],
+    "repositories": [	
+		{
+			"type": "vcs",
+			"url": "https://github.com/RedBlueBulb/laravel-shop-gateway-paypal"
+		}
+	],
     "require": {
         "php": ">=5.5.9",
         "illuminate/console": "~5.0|^6.0",
         "illuminate/support": "~5.0|^6.0",
-        "amsgames/laravel-shop-gateway-paypal": "1.0.*"
+        "amsgames/laravel-shop-gateway-paypal": "dev-custom"
     },
     "autoload": {
         "classmap": [
