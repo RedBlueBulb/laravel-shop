@@ -124,13 +124,13 @@ abstract class PaymentGateway implements PaymentGatewayInterface, Arrayable, Jso
     {
         $this->callbackSuccess = route(config('shop.callback_route'), [
             'status'    => 'success',
-            'id'        => $order->id,
+            'order_id'        => $order->id,
             'shoptoken'     => $this->token,
         ]);
 
         $this->callbackFail    = route(config('shop.callback_route'), [
             'status'    => 'fail',
-            'id'        => $order->id,
+            'order_id'        => $order->id,
             'shoptoken'     => $this->token,
         ]);
     }
